@@ -7,7 +7,7 @@ export class Category {
     @PrimaryColumn()
     id: string;
 
-    @Column("name_category")
+    @Column()
     name: string;
 
     @Column()

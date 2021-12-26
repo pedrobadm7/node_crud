@@ -8,7 +8,7 @@ export class Video {
     @PrimaryColumn()
     id: string;
 
-    @Column("name_category")
+    @Column()
     name: string;
 
     @Column()
