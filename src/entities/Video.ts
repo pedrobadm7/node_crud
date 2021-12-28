@@ -20,8 +20,8 @@ export class Video {
     @Column()
     category_id: string;
 
-    @ManyToOne(() => Category)
-    @JoinColumn({name:"category_id"})
+    @ManyToOne(() => Category) //Pois teremos muitos vídeos para uma única categoria
+    @JoinColumn({name:"category_id"}) //Qual coluna estaremos referenciando?
     category: Category;
 
     @CreateDateColumn()

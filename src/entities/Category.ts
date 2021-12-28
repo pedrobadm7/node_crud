@@ -1,19 +1,19 @@
 import { Entity, Column, CreateDateColumn, PrimaryColumn } from "typeorm";
 import { v4 as uuid} from "uuid";
 
-@Entity("categories")
+@Entity("categories") //Responsável por informar que a classe referenciará uma tabela
 export class Category {
 
-    @PrimaryColumn()
+    @PrimaryColumn() //Chave primária
     id: string;
 
-    @Column()
+    @Column({name: "name_category"}) //Coluna
     name: string;
 
-    @Column()
+    @Column() //Coluna
     description: string;
 
-    @CreateDateColumn()
+    @CreateDateColumn() //Coluna de data de criação
     created_at: Date;
 
     constructor() {

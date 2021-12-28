@@ -22,7 +22,7 @@ export class CreateVideos1640483078890 implements MigrationInterface {
                         type: "varchar",
                     },
                     {
-                        name: "category_id",
+                        name: "category_id", //Coluna que referencia o ID de outra tabela
                         type: "uuid",
                     },
                     {
