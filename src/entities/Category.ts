@@ -7,7 +7,7 @@ export class Category {
     @PrimaryColumn() //Chave primária
     id: string;
 
-    @Column({name: "name_category"}) //Coluna
+    @Column() //Coluna (passar {name: "name_category"} como parametro deveria)
     name: string;
 
     @Column() //Coluna
